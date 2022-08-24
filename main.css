@@ -1,0 +1,292 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+body{
+    background-color: #011914;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.splash{
+    background-image: url(images/Group\ 187.png);
+    background-size: cover;
+    padding: 2rem;
+    height: 100vh;
+}
+@media (max-width:1600px){
+    .splash{
+        height: 100% !important;
+    }
+}
+ h1{
+    font-family: "EzraBlack";
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+header ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+header ul li a,header ul button{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    list-style: none;
+    font-size: 150%;
+    font-family: "Grover";
+}
+header ul li{
+    transform: scale(1);
+    transition: all 330ms ease-in-out;
+}
+header ul li:hover{
+transform: scale(1.05);
+transition: all 330ms ease-in-out;
+margin-top: -0.5rem;
+}
+.top-button a{
+    background-color: #91f086;
+    border-radius: 1rem ;
+    border:#91f086;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+}
+.about{
+    padding-top: 2rem;
+}
+.about p{
+    font-size: 150%;
+}
+.about .center,.services .center{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+}
+.row-top,.row-bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    padding-top: 2rem;
+}
+.services .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+.about h1{
+    padding: 1rem;
+}
+.about h2{
+    padding-bottom: 1rem;
+}
+.services h1{
+    padding: 1rem;
+}
+ p{
+    font-family: "Montserrat";
+}
+.card h1{
+    color: #91f086;
+}
+h2{
+    color: #91f086;
+    font-family: "EzraBlack";
+
+}
+footer .row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+footer .mini{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 60%;
+}
+#bottom-image{
+    width: 40%;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    font-family: "EzraBlack";
+}
+img:hover{
+    transform: scale(1.05);
+    transition: all 330ms ease-in-out;
+}
+img{
+    transform: scale(1);
+    transition: all 330ms ease-in-out;
+
+}
+.splash .center img:hover{
+transform: scale(1);
+}
+.faq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+.title h1{
+    font-size: 100%;
+    color: white;
+}
+.sub-content{
+    color: #91f086;
+    font-family: "Montserrat";
+    font-weight: 600;
+    transition: all 330ms ease-in-out;
+    display: none;
+    margin-top: 1rem;
+
+}
+
+.rowed:hover .sub-content{
+    display: block !important;
+    transition: all 330ms ease-in-out;
+
+
+}
+.rowed{
+    border: 0.1rem #91f086 solid;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 700px;
+}
+.faq-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+ span{
+    width: 1rem;
+    background: white;
+    height: 1rem;
+}
+#title-main{
+    color: white;
+    padding-bottom: 2rem;
+}
+.burger .bar{
+    width: 1.5rem;
+    height: 0.2rem;
+    border-radius: 1rem;
+    background-color: white;
+}
+.burger{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    position: fixed;
+    z-index: 1;
+}
+.second{
+    display: none;
+}
+.tab{
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.966);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    justify-content: center;
+    margin-top: -300px;
+    transition: all 500ms ease-in-out;
+}
+.tab ul li{
+    text-decoration: none;
+    list-style: none;
+    transform: scale(1);
+    transition: all 330ms ease-in-out;
+}
+.tab ul li:hover{
+    transform: scale(1.1);
+    transition: all 330ms ease-in-out;
+}
+.tab ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.tab ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-weight: 600;
+}
+.moving{
+margin-top: 0;
+transition: all 500ms ease-in-out;
+}
+
+.barcc{
+    opacity: 0% !important;
+    transition: all 330ms ease-in-out;
+}
+.baraa{
+opacity:0% !important;
+transition: all 330ms ease-in-out;
+}
+.bar{
+    opacity: 100%;
+    transition: all 330ms ease-in-out;
+}
+#del{
+    margin-top: 1rem;
+}
+
+@media(max-width:1200px){
+    .copyright{
+        font-size: 60%;
+    }
+    footer .row{
+        margin-left: 2rem;
+    }
+}
+.tab li{
+    font-size: 120%;
+}
